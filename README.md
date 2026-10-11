@@ -521,16 +521,24 @@ The heart of Jeopardy CTFs. For each track: **what to learn → which tools → 
 
 ## Repository Structure
 
-This repository will grow in the following layout:
+The repository is organized as follows (skeleton in place — content is being added progressively):
 
 ```
 CTF-tools-and-resources/
-├── README.md            ← This roadmap (start here)
-├── notes/               ← Category-wise notes & cheat sheets
-├── tools/               ← Tool installation guides & usage snippets
-├── resources/           ← Curated books, courses, videos & links
-├── practice/            ← Platform guides & challenge walkthroughs
-└── writeups/            ← Solved challenge write-ups from live CTFs
+├── README.md                 ← This roadmap (start here)
+├── CONTRIBUTING.md           ← How to contribute
+├── platforms.md              ← Practice platform directory
+├── resources.md              ← Curated books, courses, videos & links
+├── quick-ref/                ← One-page cheat sheets (magic bytes, encodings, pwndbg…)
+├── environment/              ← VM/kali/docker setups + install scripts
+├── fundamentals/             ← Linux, networking, x86 assembly, Python, encodings, regex
+├── categories/               ← One folder per CTF category:
+│     web, pwn, rev, crypto, forensics, stego, osint, misc,
+│     mobile, blockchain, cloud, hardware-rf
+│     (each with README.md, tools.md, cheatsheet.md, notes/, examples/)
+├── methodology/              ← General approach, time management, team strategy, writeup template
+├── scripts/                  ← Reusable solve-script templates
+└── writeups/                 ← Solved challenge write-ups from live CTFs
 ```
 
 > Sections are being added progressively — star the repo to follow along.
